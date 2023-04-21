@@ -37,3 +37,4 @@ next-env.d.ts
 .env
 #db
 /db/pb_data
+/db/pb_migrations
