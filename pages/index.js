@@ -20,30 +20,37 @@ export default function Home() {
     {
       image: 'https://picsum.photos/200',
       title: 'Title 2',
+      id:2,
     },
     {
       image: 'https://picsum.photos/200',
       title: 'Title 3',
+      id:3,
     },
     {
       image: 'https://picsum.photos/200',
       title: 'Title 4',
+      id:4,
     },
     {
       image: 'https://picsum.photos/200',
       title: 'Title 5',
+      id:5,
     },
     {
       image: 'https://picsum.photos/200',
       title: 'Title 6',
+      id:6,
     },
     {
       image: 'https://picsum.photos/200',
       title: 'Title 7',
+      id:7,
     },
     {
       image: 'https://picsum.photos/200',
       title: 'Title 8',
+      id:8,
     },
   ]);
 
@@ -58,7 +65,7 @@ export default function Home() {
   const itemTemplate = (item) => {
     return(
       <div className='flex flex-col items-center mr-2' >
-        <Link href={`/pocast/${item.id}`}>
+        <Link href={`/podcast/${item.id}`}>
           <img src={item.image} alt={item.title}></img>
           <div>{item.title}</div>
         </Link>
