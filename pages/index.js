@@ -5,6 +5,7 @@ import "primereact/resources/themes/lara-light-indigo/theme.css"
 import "primereact/resources/primereact.min.css"   
 import {Carousel} from 'primereact/carousel'
 import { useState } from 'react'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,6 +15,7 @@ export default function Home() {
     {
       image: 'https://picsum.photos/200',
       title: 'Title 1',
+      id:1,
     },
     {
       image: 'https://picsum.photos/200',
@@ -56,8 +58,10 @@ export default function Home() {
   const itemTemplate = (item) => {
     return(
       <div className='flex flex-col items-center mr-2' >
-        <img src={item.image} alt={item.title}></img>
-        <div>{item.title}</div>
+        <Link href={`/pocast/${item.id}`}>
+          <img src={item.image} alt={item.title}></img>
+          <div>{item.title}</div>
+        </Link>
       </div>
     );
   }

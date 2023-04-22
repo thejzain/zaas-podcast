@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+.p-carousel .p-carousel-indicators .p-carousel-indicator button {
+    width: 0.6rem !important;
+    height: 0.2rem !important;
+}
