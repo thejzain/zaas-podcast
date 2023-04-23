@@ -75,7 +75,7 @@ export default function Home() {
 
   return (
     <div>
-      <div>Main page</div>
+      <div className='font-semibold mb-2'>Main page</div>
       <Carousel value={items} numScroll={1} numVisible={5} responsiveOptions={responsiveOptions} itemTemplate={itemTemplate}/>
     </div>
   )
